@@ -12,6 +12,25 @@ img {
   display: block;
 }
 
+/*********** forside********/ 
+.sportstøj{
+  font-size: 5rem;
+   text-align: center;
+   padding-top: 5rem;
+   padding-bottom: 3rem;
+   color:  rgb(18, 179, 0);
+}
+
+a{
+  font-size: 1.2rem;
+  color: orangered;
+}
+
+/******  font *******/
+h1{
+  font-size: 3.3rem;
+}
+
 /****** kategori**********/
 
 .box_grid {
