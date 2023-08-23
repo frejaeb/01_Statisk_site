@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+main {
+  max-width: 1000px;
+  margin: auto;
+}
 img {
   width: 100%;
   height: auto;
@@ -13,10 +17,19 @@ img {
 .box_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
 }
 .box_style {
   background-color: aqua;
-  margin: 10%;
-  padding: 5%;
+  padding: 1rem;
   text-align: center;
+}
+
+/***** produktliste ****/
+
+.produkt_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
 }
