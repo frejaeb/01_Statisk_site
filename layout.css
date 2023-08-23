@@ -28,8 +28,16 @@ img {
 
 /***** produktliste ****/
 
-.produkt_grid {
+.produktliste_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+/****** produkt ************/
+
+.produkt_grid{
+display: grid;
+  grid-template-columns: 1fr 1fr ;
   gap: 1rem;
 }
