@@ -7,3 +7,16 @@ img {
   height: auto;
   display: block;
 }
+
+/****** kategori**********/
+
+.box_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.box_style {
+  background-color: aqua;
+  margin: 10%;
+  padding: 5%;
+  text-align: center;
+}
