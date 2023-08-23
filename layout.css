@@ -14,7 +14,7 @@ img {
 
 /*********** forside********/
 .sportstøj {
-font-family: 'Rubik Mono One', sans-serif;
+  font-family: "Rubik Mono One", sans-serif;
   font-size: 5rem;
   text-align: center;
   padding-top: 5rem;
@@ -22,9 +22,9 @@ font-family: 'Rubik Mono One', sans-serif;
   color: rgb(18, 179, 0);
 }
 
-
 /******  font *******/
 h1 {
+  font-family: "Rubik Mono One", sans-serif;
   font-size: 3.3rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -32,6 +32,21 @@ h1 {
 a {
   font-size: 1.2rem;
   color: orangered;
+  font-weight: bold;
+  font-family: "Rubik Mono One", sans-serif;
+  text-decoration: none;
+}
+h2 {
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+h3 {
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+/*********** list *******/
+ul {
+  list-style: none;
 }
 
 /****** kategori**********/
@@ -43,7 +58,6 @@ a {
   padding: 1rem;
 }
 .box_style {
-  
   background-color: rgb(18, 179, 0);
   padding: 1rem;
   text-align: center;
