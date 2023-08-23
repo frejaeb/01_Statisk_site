@@ -34,10 +34,18 @@ img {
   gap: 1rem;
 }
 
+.tilbud {
+  text-align: center;
+  background-color: rgb(255, 242, 0);
+}
+.Udsolgt {
+  text-align: center;
+  background-color: rgb(255, 0, 0);
+}
 /****** produkt ************/
 
-.produkt_grid{
-display: grid;
-  grid-template-columns: 1fr 1fr ;
+.produkt_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
