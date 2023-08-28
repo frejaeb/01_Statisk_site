@@ -8,7 +8,7 @@ function showProducts(products) {
 }
 
 function showProducts(produkt) {
-  console.log(ptodukt);
+  console.log(produkt);
   //fange templates
   const template = document.querySelector("#produkyLegginsTemplate").content;
   //lave kopi
