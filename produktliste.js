@@ -4,10 +4,10 @@ fetch("https://kea-alt-del.dk/t7/api/products")
 
 function showProducts(products) {
   //looper og kalder produkt
-  products.forEach((produkt) => showProducts);
+  products.forEach(showProduct);
 }
 
-function showProducts(produkt) {
+function showProduct(produkt) {
   console.log(produkt);
   //fange templates
   const template = document.querySelector("#produkyLegginsTemplate").content;
@@ -17,3 +17,19 @@ function showProducts(produkt) {
 
   //appende
 }
+
+/* {
+  "id": 1528,
+  "gender": "Men",
+  "category": "Apparel",
+  "subcategory": "Topwear",
+  "articletype": "Jackets",
+  "season": "Fall",
+  "productionyear": 2010,
+  "usagetype": "Sports",
+  "productdisplayname": "Black Fleece Jacket",
+  "price": 3999,
+  "discount": 49,
+  "brandname": "Puma",
+  "soldout": 0
+} */
