@@ -21,6 +21,7 @@ function showProduct(produkt) {
   }
   //appende
   document.querySelector("main").appendChild(copy);
+  
 }
 
 // indhold fr html

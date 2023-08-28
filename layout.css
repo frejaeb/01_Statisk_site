@@ -86,3 +86,10 @@ ul {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
+article .price span {
+  display: none;
+}
+.produktlist article .discounted,
+.productlist article .price span {
+  display: none;
+}
