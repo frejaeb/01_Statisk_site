@@ -17,11 +17,10 @@ function showProduct(produkt) {
   copy.querySelector("h3").textContent = produkt.productdisplayname;
   if (produkt.soldout) {
     //produkt er udsolt
-    copy.querySelector("article").classList.add("soldOut");
+    copy.querySelector("article").classList.add("udsolgt");
   }
   //appende
-  document.querySelector("main").appendChild(copy);
-  
+  document.querySelector(".produktliste_grid").appendChild(copy);
 }
 
 // indhold fr html
