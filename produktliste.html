@@ -12,13 +12,18 @@
     <main>
         <h1>Produktliste</h1>
         <div class="produktliste_grid">
-            <article>
+            <template id="produkyLegginsTemplate">
+                <article>
 
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="">
-                <h3>Leggins 300kr</h3>
-                <a href="produkt.html">Læs mere</a>
-            </article>
-            <article>
+                    <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="bukser">
+                    <h3>Leggins</h3>
+                    <p class="subtle"> leggins</p>
+                    <p class="price"><span>Prev.</span>300 kr</p>
+
+                    <a class="læs-mer" href="produkt.html">Læs mere</a>
+                </article>
+            </template>
+            <!--        <article>
 
                 <img src="https://kea-alt-del.dk/t7/images/webp/1000/1533.webp" alt="">
                 <h3>T-shirt 250kr</h3>
@@ -37,9 +42,10 @@
                 <h2 class="Udsolgt">Udsolgt</h2>
                 <h3>Badedragt 480kr</h3>
                 <a href="produkt.html">Læs mere</a>
-            </article>
+            </article> -->
         </div>
     </main>
+    <script src="produktliste.js"></script>
 </body>
 
 </html>
