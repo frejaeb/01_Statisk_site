@@ -16,5 +16,5 @@ function showProdukt(produkt) {
 
   document.querySelector("p span").textContent = produkt.price;
   document.querySelector(".subtle").textContent = produkt.subcategory;
-  document.querySelector("h3").textContent = produkt.articletype;
+  document.querySelector(".articletype").textContent = produkt.articletype;
 }
