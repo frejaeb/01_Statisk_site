@@ -70,14 +70,19 @@ ul {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
 }
-
+.articletype {
+}
 .tilbud {
   text-align: center;
+
   background-color: rgb(255, 242, 0);
 }
 .udsolgt {
   text-align: center;
   background-color: rgb(255, 0, 0);
+}
+.hidden {
+  display: none;
 }
 /****** produkt ************/
 
@@ -85,11 +90,4 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-}
-article .price span {
-  display: none;
-}
-.produktlist article .discounted,
-.productlist article .price span {
-  display: none;
 }

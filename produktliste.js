@@ -8,7 +8,7 @@ function showProducts(products) {
 }
 
 function showProduct(produkt) {
-  console.log(produkt);
+  // console.log(produkt);
   //fange templates
   const template = document.querySelector("#produkyLegginsTemplate").content;
   //lave kopi
@@ -18,10 +18,21 @@ function showProduct(produkt) {
   //billed galleri
   copy.querySelector("img").src = `http://kea-alt-del.dk/t7/images/webp/640/${produkt.id}.webp`;
   copy.querySelector("img").alt = produkt.subcategory;
-  if (produkt.soldout) {
+  copy.querySelector("p span").textContent = produkt.price;
+  copy.querySelector(".subtle").textContent = produkt.subcategory;
+  copy.querySelector(".articletype").textContent = produkt.articletype;
+  if (produkt.soldout != 1) {
     //produkt er udsolt
-    copy.querySelector("article").classList.add("udsolgt");
+    copy.querySelector(".udsolgt").classList.add(".hidden");
+  } else {
+    copy.querySelector(".udsolgt").textContent = "Udsolgt!";
   }
+  if (produkt.discount === null) {
+    copy.querySelector(".tilbud").classList.add(".hidden");
+  } else {
+    copy.querySelector(".tilbud").textContent = "Tilbud! " + (produkt.price / produkt.discount).toFixed(0) + "%";
+  }
+
   copy.querySelector(".læs-mer").setAttribute("href", `produkt.html?id=${produkt.id}`);
   //appende
   document.querySelector(".produktliste_grid").appendChild(copy);
