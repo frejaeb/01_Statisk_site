@@ -8,7 +8,7 @@ function showProducts(products) {
 }
 
 function showProduct(produkt) {
-  //console.log(produkt);
+  console.log(produkt);
   //fange templates
   const template = document.querySelector("#produkyLegginsTemplate").content;
   //lave kopi
@@ -19,6 +19,7 @@ function showProduct(produkt) {
     //produkt er udsolt
     copy.querySelector("article").classList.add("udsolgt");
   }
+  copy.querySelector(".læs-mer").setAttribute("href", `produkt.html?id=${produkt.id}`);
   //appende
   document.querySelector(".produktliste_grid").appendChild(copy);
 }
