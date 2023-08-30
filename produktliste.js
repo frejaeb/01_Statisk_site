@@ -1,4 +1,7 @@
-fetch("https://kea-alt-del.dk/t7/api/products")
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("category");
+
+fetch("https://kea-alt-del.dk/t7/api/products?category=" + category)
   .then((res) => res.json())
   .then((data) => showProducts(data));
 
@@ -8,7 +11,7 @@ function showProducts(products) {
 }
 
 function showProduct(produkt) {
-   console.log(produkt);
+  console.log(produkt);
   //fange templates
   const template = document.querySelector("#produkyLegginsTemplate").content;
   //lave kopi

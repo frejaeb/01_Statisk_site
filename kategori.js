@@ -15,8 +15,8 @@ function showCategory(kategori) {
   const copy = template.cloneNode(true);
   //ændre indhold
   copy.querySelector("a").textContent = kategori.category;
-//copy.querySelector("a").textContent = kategori.category;
-  
+  //copy.querySelector("a").textContent = kategori.category;
+
   copy.querySelector(".kategori").setAttribute("href", `produktliste.html?category=${kategori.category}`);
   //appende
   document.querySelector(".box_grid").appendChild(copy);
@@ -28,7 +28,7 @@ function showCategory(kategori) {
                 <a href="produktliste.html">Topwear</a>
             </div> */
 
-            /*
+/*
 
 [
   {
@@ -51,4 +51,3 @@ function showCategory(kategori) {
   }
 ]
             */
-
