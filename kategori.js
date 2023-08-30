@@ -4,17 +4,17 @@ fetch("https://kea-alt-del.dk/t7/api//categories")
 
 function showCategories(categories) {
   //looper og kalder kategori
-  categories.forEach(showCategories);
+  categories.forEach(showCategory);
 }
 
-function showCategories(kategori) {
+function showCategory(kategori) {
   console.log(kategori);
   //fange tamplates
   const template = document.querySelector("#produktTemplate").content;
   //lav kopi
   const copy = template.cloneNode(true);
   //ændre indhold
-  //copy.querySelector("a").textContent = kategori.category;
+  copy.querySelector("a").textContent = kategori.category;
   
 
   copy.querySelector(".kategori").setAttribute("href", `produktliste.html?id=${kategori.id}`);
