@@ -4,27 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="layout.css">
-    <title>Forside</title>
+    <title>Kategori</title>
 </head>
 
 <body>
     <header>
 
     </header>
+
     <main>
-        <h1 class="sportstøj">Sports Tøj</h1>
-        <ul>
-            <li><a href="produkt.html">produkt</a></li>
-            <li><a href="produktliste.html">produktliste</a></li>
-            <li><a href="kategori.html">kategori</a></li>
-        </ul>
-
-
+        <h1>Kategori</h1>
+        <div class="box_grid">
+            <template id="produktTemplate">
+                <div class="box_style">
+                    <a class="kategori" href="produktliste.html">Topwear</a>
+                </div>
+            </template>
+            <!--   <div class="box_style">
+                <a href="produktliste.html">Accessories</a>
+            </div>
+            <div class="box_style">
+                <a href="produktliste.html">Bags</a>
+            </div>
+          
+            <div class="box_style">
+                <a href="produktliste.html">Tshirts</a>
+            </div> -->
+        </div>
     </main>
+    <script src="kategori.js"></script>
 </body>
 
 </html>
